@@ -17,7 +17,7 @@ module.exports = {
         resolve: {
           extensions: ['.ts', '.tsx', '.js', '.json'],
         },
-        use: 'ts-loader',
+        use: 'esbuild-loader',
       },
       {
         test: /\.css$/,
