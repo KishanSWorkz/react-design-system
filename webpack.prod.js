@@ -1,7 +1,7 @@
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const TerserPlugin = require("terser-webpack-plugin");
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
@@ -10,8 +10,8 @@ module.exports = merge(common, {
     minimize: true,
     minimizer: [
       new TerserPlugin({
-        terserOptions: { output: { ascii_only: true } }
-      })
+        terserOptions: { output: { ascii_only: true } },
+      }),
     ],
   },
   plugins: [
@@ -29,6 +29,6 @@ module.exports = merge(common, {
                 </body>
             </html>
             `,
-    })
+    }),
   ],
 });
