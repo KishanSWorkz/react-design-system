@@ -5,10 +5,9 @@ const container = document.getElementById('app-root')!;
 const root = createRoot(container);
 
 root.render(
-    <React.StrictMode>
-        <div>
-            <h1>Hey we finally get there!</h1>
-            <h3>That's the beauty of this.</h3>
-        </div>
-    </React.StrictMode>
+  <React.StrictMode>
+    <div>
+      <h1>React Design System</h1>
+    </div>
+  </React.StrictMode>
 );

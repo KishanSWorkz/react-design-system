@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "lint": "eslint --ignore-path .eslintignore --ext .jsx,.tsx,.js,.ts .",
+    "format": "prettier --ignore-path .prettierignore --write \"**/*.+(jsx|tsx|js|ts|json)\""
   },
   "dependencies": {
     "css-loader": "^6.8.1",
@@ -23,5 +25,13 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
     "webpack-merge": "^5.9.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "prettier": "^3.0.3"
   }
 }
